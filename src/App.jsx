@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Cat, Heart, ShoppingBag, Clock, Sparkles } from 'lucide-react'
+const BACKEND_URL = "https://tom-api-vfo3.onrender.com"; 
 import HomePage from './components/HomePage.jsx'
 import StudyTimer from './components/StudyTimer.jsx'
 import ShopPage from './components/ShopPage.jsx'
@@ -106,4 +107,5 @@ function App() {
 }
 
 export default App
+
 
