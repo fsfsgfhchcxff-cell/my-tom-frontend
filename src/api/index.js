@@ -74,4 +74,3 @@ export const shopAPI = {
 
 export default api
 
-
