@@ -21,16 +21,16 @@ api.interceptors.response.use(
 
 export const userAPI = {
   // 创建用户
-  createUser: (username) => api.post('/users', { username }),
+  createUser: (username) => api.post('/user', { username }),
   
   // 获取用户信息
-  getUser: (userId) => api.get(`/users/${userId}`),
+  getUser: (userId) => api.get(`/user/${userId}`),
   
   // 通过用户名获取用户
-  getUserByUsername: (username) => api.get(`/users/username/${username}`),
+  getUserByUsername: (username) => api.get(`/user/username/${username}`),
   
   // 每日签到
-  checkIn: (userId) => api.post(`/users/${userId}/checkin`),
+  checkIn: (userId) => api.post(`/user/${userId}/checkin`),
 }
 
 export const gameAPI = {
@@ -73,4 +73,5 @@ export const shopAPI = {
 }
 
 export default api
+
 
